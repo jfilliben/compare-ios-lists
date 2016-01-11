@@ -1,0 +1,7 @@
+#pl_list.txt
+#
+# list of prefix-lists to compare
+#
+#example:
+#PL_one
+#PL_two

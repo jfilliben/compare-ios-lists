@@ -1,0 +1,10 @@
+# acl_list.txt
+#
+# list of access-lists to compare
+#
+# ACLs can be numbered or named. The script uses the output of 'show access-list [entry]' to compare
+#
+#example:
+#101
+#acl_name1
+#5

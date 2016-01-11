@@ -1,0 +1,12 @@
+# routerfile.txt
+# 
+# This file lists all routers that must be compared
+# Format is a left-justified list of routers, either by IPv4 address or DNS name
+# The first router listed is the baseline for ACL / Prefix-list comparison
+#
+# example:
+#
+#router1
+#10.1.1.1
+#router3.example.com
+
