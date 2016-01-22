@@ -118,7 +118,7 @@ def parse_args():
     except:
         quit("router file cannot be found")
 
-    router_list = [x for x in router_list if x[0] != "#"]
+    router_list = [x for x in router_list if x[0] != "#" and x[0] != " "]
 
     try:
         with open(args.accesslistfile) as f:
@@ -126,7 +126,7 @@ def parse_args():
     except:
         quit("router file cannot be found")
 
-    acl_list = [x for x in acl_list if x[0] != "#"]
+    acl_list = [x for x in acl_list if x[0] != "#" and x[0] != " "]
 
     return global_verbose, ssh_username, ssh_password, router_list, acl_list
 #

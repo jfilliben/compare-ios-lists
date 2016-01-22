@@ -109,7 +109,7 @@ def parse_args():
     except:
         quit("router file cannot be found")
 
-    router_list = [x for x in router_list if x[0] != "#"]
+    router_list = [x for x in router_list if x[0] != "#" and x[0] != " "]
 
     try:
         with open(args.prefixlistfile) as f:
@@ -117,7 +117,7 @@ def parse_args():
     except:
         quit("router file cannot be found")
 
-    pl_list = [x for x in pl_list if x[0] != "#"]
+    pl_list = [x for x in pl_list if x[0] != "#" and x[0] != " "]
 
     return global_verbose, ssh_username, ssh_password, router_list, pl_list
 #
